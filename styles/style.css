@@ -24,12 +24,20 @@ body{
 .navigation {
     margin: 41px 66px 68px 76px;
     max-height: 80px;
+    display: flex;
+    justify-content: space-between;
 }
+.navigation__logo {
+    width: 45px;
+    height: 45px;
+}
+
 .navigation__left {
     margin-right: 120px;
 }
 
 .navigation__right {
+    display: flex;
     align-items: center;
 }
 
@@ -43,6 +51,7 @@ body{
     flex-shrink: 0;
     border-radius: 4px;
     background: var(--primary, #3A5AFF);
+    border: 0;
 }
 
 .navigation__button_outline {
@@ -73,9 +82,19 @@ body{
     font-size: 50px;
 }
 
+.navigation__burger {
+    width: 34px;
+}
+
 .header {
     margin-bottom: 45px;
 
+}
+
+.header__container {
+    display: flex;
+    width: 1150px;
+    margin: 0 auto;
 }
 
 .header__left {
@@ -126,6 +145,11 @@ body{
     line-height: normal;
 }
 
+.header__get-app {
+    display: flex;
+    gap: 10px;
+}
+
 .header__download {
     width: 200px;
     height: 29px;
@@ -138,6 +162,7 @@ body{
 }
 
 .header__app-store {
+
     width: 122px;
     height: 37px;
     flex-shrink: 0;
@@ -155,8 +180,6 @@ body{
 }
 
 .who {
-
-    height: 577px;
     flex-shrink: 0;
 
     background: var(--pms-663, #F2F2F2);
@@ -197,6 +220,10 @@ body{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.who__item-logo {
+    height: 50px;
 }
 
 .who__item-text {
@@ -951,6 +978,172 @@ body{
     background: url('/images/google-image.png'), lightgray -1090px -1285.946px / 1272.727% 3122.804% no-repeat;
     background-size: cover;
 }
+
+@media (min-width: 425px) and (max-width: 1024px){
+    .container {
+        max-width: 425px;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 20px;
+        margin: 15px 15px;
+
+    }
+
+    .navigation__left {
+        margin: 0 auto;
+    }
+    .navigation__right {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .navigation__title {
+        font-size: 25px;
+    }
+    .navigation__logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navigation__button {
+        font-size: 12px;
+        width: 65px;
+        height: 22px;
+        margin: 0;
+    }
+    .navigation__button_outline {
+        font-size: 12px;
+        width: 65px;
+        height: 22px;
+        margin: 0;
+    }
+
+    .navigation__language {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .navigation__burger {
+        width: 20px;
+        margin: 0;
+    }
+    .header__container {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 425px;
+    }
+    .header__left {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__right {
+        margin: 0;
+    }
+    .header__title {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .header__text {
+        margin: 20px 0 25px 0;
+        font-size: 14px;
+    }
+    .header__sign-up-button {
+        font-size: 12px;
+        width: 125px;
+        height: 35px;
+    }
+
+    .header__download {
+        text-align: center;
+    }
+
+    .header__get-app {
+        justify-content: center;
+    }
+
+    .header__right-image {
+        margin: 0 auto;
+        width: 250px;
+    }
+    .header__right {
+        width: 250px;
+        margin: 0 auto;
+        align-content: center;
+        align-items: center;
+    }
+
+    .who {
+
+    }
+
+    .who__title {
+        font-size: 18px;
+    }
+    .who__line {
+        width: 55px;
+        height: 4px;
+    }
+
+    .who__item-logo-div {
+        display: flex;
+        justify-content: center;
+    }
+    .who__body {
+        padding-top: 25px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+    .who__item-logo {
+        height: 40px;
+    }
+
+    .who__item-title {
+        padding: 15px 0 8px 0;
+        font-size: 16px;
+    }
+    .who__item-text {
+        font-size: 12px;
+        line-height: 16px;
+        height: 40px;
+    }
+    .who__item-learn {
+        padding: 10px 0 15px 0;
+        font-size: 12px;
+    }
+    .who__item-logo-home {
+        width: 40px;
+        height: 40px;
+        border-radius: 15px;
+    }
+
+    .who__item-logo-learning{
+        width: 40px;
+        height: 40px;
+        border-radius: 15px;
+    }
+
+    .who__sign-up-button {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .who__sign-up-container {
+        padding-bottom: 30px;
+    }
+
+
+
+
+}
+
 
 
 
