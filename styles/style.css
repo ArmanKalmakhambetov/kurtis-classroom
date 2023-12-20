@@ -595,13 +595,20 @@ body {
     line-height: normal;
 }
 
+.features__title-block {
+    width: 1150px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
 .features__line {
     width: 116px;
     height: 8px;
     flex-shrink: 0;
     background: var(--primary, #3A5AFF);
 
-    margin-bottom: 76px;
+    margin: 20px auto ;
 }
 
 .features__card-title {
@@ -982,8 +989,8 @@ body {
     background: url('/images/google-image.png'), lightgray -1090px -1285.946px / 1272.727% 3122.804% no-repeat;
     background-size: cover;
 }
-
-@media (min-width: 425px) and (max-width: 1024px) {
+/*Mobile*/
+@media (max-width: 425px) {
     .container {
         max-width: 425px;
         margin: 0 auto;
@@ -1218,6 +1225,7 @@ body {
         height: 250px;
         width: 100%;
         margin: 0 auto;
+        border-radius: inherit;
 
     }
 
@@ -1668,6 +1676,759 @@ body {
 
     .footer__linkedin, .footer__tiktok, .footer__instagram, .footer__facebook, .footer__tweeter {
         width: 15px;
+    }
+
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 1024px){
+
+
+    .navigation {
+        margin: 20px 30px 35px 40px;
+        max-height: 80px;
+    }
+
+    .navigation__logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navigation__left {
+        margin-right: 120px;
+    }
+
+    .navigation__button {
+        width: 60px;
+        height: 30px;
+        font-size: 60%;
+
+    }
+
+    .navigation__button_outline {
+        width: 60px;
+        height: 30px;
+        margin: 0 30px 0 10px;
+        font-size: 60%;
+
+
+    }
+
+    .navigation__language {
+        color: var(--pms-black-7, #333);
+        margin-right: 15px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .navigation__title {
+        flex-shrink: 0;
+        font-family: 'Vibur', cursive;
+        font-size: 35px;
+    }
+
+    .navigation__burger {
+        width: 25px;
+    }
+
+    .header {
+        margin-bottom: 30px;
+
+    }
+
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .header__left {
+        margin-right: 10px;
+    }
+
+    .header__right-image {
+        width: 100%;
+    }
+
+    .header__title {
+
+
+        font-size: 40px;
+        line-height: 50px;
+
+    }
+
+    .header__text {
+        font-size: 18px;
+        line-height: 24px;
+
+        margin: 35px 0 48px 0;
+    }
+
+
+    .header__sign-up-button {
+        width: 125px;
+        height: 30px;
+        margin-bottom: 24px;
+
+        font-size: 12px;
+    }
+
+    .header__get-app {
+        display: flex;
+        gap: 5px;
+    }
+
+    .header__download {
+        width: 200px;
+        height: 30px;
+
+        font-size: 12px;
+
+    }
+
+    .header__app-store {
+
+        width: 60px;
+        height: 20px;
+        flex-shrink: 0;
+
+        background: url("/images/app-store-logo.png"), lightgray -915.063px -1514.513px / 1250% 4282.704% no-repeat;
+        background-size: contain;
+    }
+
+    .header__google-play {
+        width: 60px;
+        height: 20px;
+        flex-shrink: 0;
+
+        background: url("/images/google-play-logo.png"), lightgray -915.063px -1514.513px / 1250% 4282.704% no-repeat;
+        background-size: contain;
+
+    }
+
+    .who__title {
+        padding-top: 25px;
+
+        font-size: 24px;
+    }
+
+    .who__line {
+        width: 80px;
+        height: 6px;
+    }
+
+    .who__body {
+        padding-top: 30px;
+        display: flex;
+        gap: 10px;
+        flex-shrink: 1;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .who__item-title {
+        padding-top: 15px;
+        padding-bottom: 8px;
+        flex-shrink: 1;
+
+        font-size: 18px;
+    }
+
+    .who__item-logo {
+        height: 40px;
+    }
+
+    .who__item-text {
+        width: 135px;
+        height: 100px;
+        flex-shrink: 1;
+
+        font-size: 12px;
+    }
+
+    .who__item-learn {
+        color: #544837;
+        padding-top: 14px;
+        padding-bottom: 25px;
+
+        font-size: 12px;
+    }
+
+    .who__sign-up-button {
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .who__item-logo-home {
+        width: 40px;
+        height: 40px;
+    }
+
+    .who__item-logo-learning {
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .who__sign-up-container {
+        padding-bottom: 30px;
+    }
+
+    .amazing__title {
+        padding-top: 30px;
+
+        font-size: 24px;
+
+    }
+
+    .amazing__line {
+        width: 80px;
+        height: 6px;
+    }
+
+    .amazing__cards {
+        height: 220px;
+        gap: 25px;
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+
+    .amazing__item-1 {
+        width: 250px;
+
+    }
+
+    .amazing__item-title {
+        padding: 10px 0 0 20px;
+        font-size: 24px;
+
+    }
+
+    .amazing__item-text {
+        margin: 10px 0 20px 20px;
+        font-size: 16px;
+    }
+
+    .amazing__item-learn {
+        margin: 0 0 0 20px;
+
+        font-size: 16px;
+    }
+
+    .amazing__item-2 {
+        width: 335px;
+        height: 200px;
+    }
+
+    .amazing__item-2-back-right {
+        width: 400px;
+        height: 160px;
+        border-radius: inherit;
+        flex-shrink: 1;
+        position: absolute;
+        background-image: url("/images/amazing-item-2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -2;
+    }
+
+    .amazing__item-2-back {
+        width: 200px;
+        height: 160px;
+        flex-shrink: 0;
+        border-radius: 16px 0 0 16px;
+        background: #2F281E;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .amazing__item-3-back {
+        width: 450px;
+        height: 150px;
+        flex-shrink: 1;
+        border-radius: 16px;
+    }
+
+
+    .amazing__item-3 {
+        width: 315px;
+        height: 160px;
+        border-radius: 16px;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .amazing__item-yellow-rotate {
+        position: absolute;
+        width: 509px;
+        height: 509px;
+        transform: rotate(-50.107deg) translateY(-60px) translateX(50px);
+        flex-shrink: 1;
+        z-index: -1;
+        background: var(--pms-7408, #FFC00A);
+    }
+
+    .amazing__burger-image {
+
+        transform: rotate(10.332deg);
+        flex-shrink: 0;
+        width: 100px;
+    }
+
+    .amazing__item-3-left {
+        width: 150px;
+    }
+
+    .amazing__item-new {
+
+        margin: 15px 0 0 20px;
+        width: 45px;
+        height: 15px;
+        flex-shrink: 0;
+
+        border-radius: 20px;
+
+        font-size: 12px;
+    }
+
+    .amazing__item-3-title {
+        margin: 0 0 0 15px;
+
+        font-size: 18px;
+    }
+
+    .amazing__item-3-text {
+        margin: 5px 0 15px 15px;
+        width: 150px;
+
+        font-size: 12px;
+
+    }
+
+    .amazing__item-3-learn {
+        margin: 0 0 0 20px;
+
+        color: var(--pms-black-7, #333);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .amazing__carousel {
+        width: 80px;
+        height: 12px;
+        margin: 0 auto;
+    }
+
+    .amazing__code-title {
+        padding: 30px 0 5px 0;
+
+        font-size: 24px;
+
+    }
+
+    .amazing__code-text {
+        padding-bottom: 20px;
+
+        font-size: 16px;
+
+    }
+
+    .code {
+        height: 100%;
+
+    }
+
+    .code__title {
+        padding-top: 125px;
+
+        gap: 15px;
+        font-size: 36px;
+
+    }
+    .code__logo {
+        width: 36px;
+    }
+
+    .code__input-code {
+        padding-top: 30px;
+        padding-bottom: 9px;
+
+    }
+
+    .code__input-box {
+
+        gap: 9px;
+        width: 200px;
+        height: 40px;
+
+        border-radius: 36px;
+
+    }
+
+    .code__input {
+        width: 150px;
+        margin-left: 15px;
+
+        font-size: 18px;
+
+    }
+    .code__input-arrow {
+        height: 25px;
+    }
+
+    .code__text {
+        font-size: 16px;
+        padding-bottom: 125px;
+
+    }
+
+    .features__still {
+        gap: 15px;
+        padding: 30px 0 60px 0;
+        width: 500px;
+        margin: 0;
+
+    }
+
+    .features__still-more {
+        font-size: 20px;
+        text-align: start;
+
+    }
+
+    .features__still-link {
+        font-size: 20px;
+    }
+
+    .features__title-block {
+        width: 500px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .features__title {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .features__line {
+        width: 80px;
+        height: 6px;
+        margin-bottom: 20px;
+    }
+
+    .features__card-title {
+        padding-bottom: 15px;
+
+        font-size: 20px;
+    }
+
+    .features__card-image {
+        width: 250px;
+        height: 200px;
+    }
+
+    .features__card-text {
+        font-size: 16px;
+        line-height: 32px;
+        width: 450px;
+    }
+
+
+    .customers__title {
+
+        gap: 10px;
+
+        padding-top: 40px;
+    }
+
+    .customers__title-text {
+
+        font-size: 24px;
+
+    }
+
+    .customers__title-line {
+        width: 80px;
+        height: 6px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .customers__body-left {
+        position: relative;
+        border-right: 2px solid white;
+    }
+
+    .customers__cloud {
+        margin: 0 0 0 30px;
+
+        width: 250px;
+        height: 70px;
+
+        border-radius: 18px;
+    }
+
+    .customers__cloud-text {
+        font-size: 18px;
+    }
+
+    .customers__oval {
+        margin-left: 220px;
+        margin-top: 55px;
+        width: 20px;
+        height: 25px;
+
+    }
+
+    .customers__circle {
+        z-index: 1;
+        position: absolute;
+        margin-left: 220px;
+        margin-top: 80px;
+    }
+
+    .customers__image {
+        position: absolute;
+        margin: 70px 25px 0 220px;
+
+
+        width: 150px;
+        height: 150px;
+        flex-shrink: 0;
+    }
+
+    .customers__body-right {
+        padding-top: 23px;
+        padding-left: 20px;
+        margin-left: 400px;
+        width: 400px;
+        border-left: 2px solid white;
+
+    }
+
+    .customers__right-title {
+
+        font-size: 14px;
+    }
+
+    .customers__right-text {
+        margin-top: 20px;
+        margin-right: 45px;
+
+        font-size: 12px;
+
+    }
+
+    .customers__right-logo {
+        margin-top: 30px;
+
+        width: 150px;
+        height: 40px;
+
+        background-size: cover;
+    }
+
+    .customers__slider {
+        padding-top: 60px;
+        padding-bottom: 20px;
+        width: 80px;
+        margin: auto;
+    }
+
+    .advantages__top {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        gap: 20px;
+    }
+
+    .advantages__item {
+        display: flex;
+
+        gap: 6px;
+    }
+
+    .advantages__item-text {
+        font-size: 16px;
+    }
+
+    .advantages__line {
+        width: 3px;
+        height: 75px;
+
+    }
+
+
+    .advantages__body {
+        gap: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantages__image {
+        width: 250px;
+        height: 200px;
+
+    }
+
+    .advantages__title {
+        margin-bottom: 20px;
+
+        font-size: 38px;
+
+        line-height: 72px;
+        text-align: center;
+    }
+    .advantages__ready-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantages__button {
+        font-size: 16px;
+
+        width: 180px;
+        height: 45px;
+    }
+
+    .footer__row {
+        align-items: start;
+        gap: 20px;
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+
+    .footer__logo {
+        margin-bottom: 45px;
+        width: 180px;
+    }
+
+    .footer__item-title {
+        padding-bottom: 25px;
+
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px; /* 150% */
+    }
+
+    .footer__item-link {
+        padding-bottom: 10px;
+
+        text-decoration: none;
+        color: #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 218.75% */
+    }
+
+    .footer__copyright {
+        padding-bottom: 30px;
+
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .footer__apps-title {
+        padding-bottom: 9px;
+
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .footer__apps-logos {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer__app-store {
+        width: 75px;
+        height: 25px;
+        flex-shrink: 0;
+
+        background: url('/images/app-store-logo.png'), lightgray -660.814px -1271.863px / 1238.938% 4408.665% no-repeat;
+        background-size: contain;
+    }
+
+    .footer__google-play {
+        width: 75px;
+        height: 25px;
+        flex-shrink: 0;
+
+        background: url('/images/google-play-logo.png'), lightgray -778.938px -1275.379px / 1250% 4282.704% no-repeat;
+        background-size: contain;
+    }
+
+    .footer__app-gallery {
+        width: 75px;
+        height: 25px;
+        flex-shrink: 0;
+
+        background: url('/images/app-galery-logo.png'), lightgray -898.947px -1275.379px / 1228.07% 4282.704% no-repeat;
+        background-size: contain;
+    }
+
+    .footer__follow {
+        padding-top: 30px;
+
+    }
+
+    .footer__follow-title {
+        padding-bottom: 14px;
+
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .footer__follow-networks {
+        display: flex;
+        gap: 16px;
+    }
+
+    .footer__item-partners {
+        padding-top: 30px;
+        gap: 30px;
+    }
+
+    .footer__microsoft {
+        width: 75px;
+        height: 35px;
+        flex-shrink: 0;
+
+        background: url('/images/microsoft-image.png'), lightgray -967px -1286.946px / 1238.938% 3189.248% no-repeat;
+        background-size: contain;
+    }
+
+    .footer__google {
+        width: 75px;
+        height: 35px;
+        flex-shrink: 0;
+
+        background: url('/images/google-image.png'), lightgray -1090px -1285.946px / 1272.727% 3122.804% no-repeat;
+        background-size: contain;
+    }
+
+    .footer__linkedin, .footer__tiktok, .footer__instagram, .footer__facebook, .footer__tweeter {
+        width: 25px;
     }
 
 }
